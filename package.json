@@ -1,5 +1,5 @@
 {
-  "name": "custom-elements",
+  "name": "vanilla-js",
   "version": "1.0.0",
   "author": {
     "name": "Gabriel Mayta",
@@ -13,11 +13,9 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
-    "babel-plugin-transform-custom-element-classes": "^0.1.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "clean-webpack-plugin": "^0.1.17",
-    "html-loader": "^0.5.5",
     "html-webpack-plugin": "^2.30.1",
     "path": "^0.12.7",
     "uglifyjs-webpack-plugin": "^1.1.6",
@@ -27,6 +25,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "lit-html": "^0.10.0"
+    "lit-html": "^0.10.0",
+    "siema": "^1.5.1"
   }
 }

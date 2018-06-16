@@ -19,11 +19,6 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/
-      },
-      {
-        test: /\.html$/,
-        loader: 'html-loader',
-        exclude: /node_modules/
       }
     ]
   },
@@ -36,9 +31,6 @@ module.exports = {
   ],
   resolve: {
     extensions: ['.js'],
-    modules: ['node_modules', 'src'],
-    alias: {
-      components: `${src}/components`
-    }
+    modules: ['node_modules', 'src']
   }
 };

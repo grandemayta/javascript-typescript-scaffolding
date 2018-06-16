@@ -1,28 +1,22 @@
 import { html, render } from 'lit-html';
-import { querystringToObject } from '../../services';
+import { Header } from '../../components';
 
-export default class Home extends HTMLElement {
+export default class Home {
     constructor() {
-        super();
-        this.id = '';
-    }
-
-    connectedCallback() {
-        let qs = querystringToObject(location.search);
-        this.id = qs.username || 'grandemayta';
-        render(this.template(), this);
+        this.title = 'VanillaJS';
     }
 
     template() {
         return html`
             <div>
                 <app-header></app-header>
-                <div style="padding-top: 20px;" class="mui-container">
-                    <app-profile data-id=${this.id}></app-profile>
-                    <app-repositories data-id=${this.id}></app-repositories>
-                    <app-followers data-id=${this.id}></app-followers>
-                </div>
+                <h1>${this.title}</h1>
             </div>
         `;
+    }
+
+    load() {
+        render(this.template(), document.querySelector('#root'));
+        new Header().load();
     }
 }
