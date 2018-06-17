@@ -1,6 +1,13 @@
-import { Home } from './features';
+import Router from './core/routes';
+import { Home, Contacts } from './features';
 
-document.addEventListener('DOMContentLoaded', () => {
-    const home = new Home();
-    home.load();
-});
+const routes = {
+    '/': () => {
+        new Home().load();
+    },
+    '/contacts': () => {
+        new Contacts().load();
+    }
+};
+
+new Router().bootstrap(routes);

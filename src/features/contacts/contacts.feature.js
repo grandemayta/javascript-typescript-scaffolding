@@ -2,26 +2,26 @@ import { html, render } from 'lit-html';
 import Router from '../../core/routes';
 import { Header } from '../../components';
 
-export default class Home {
+export default class Contact {
     constructor() {
-        this.title = 'VanillaJS';
+        this.title = 'Contacts';
     }
 
     click() {
-        let home = document.querySelector('#home');
+        let home = document.querySelector('#contacts');
         let btn = home.querySelector('button');
 
         btn.addEventListener('click', () => {
-            new Router().go('/contacts');
+            new Router().go('/');
         });
     }
 
     template() {
         return html`
-            <div id="home">
+            <div id="contacts">
                 <app-header></app-header>
                 <h1>${this.title}</h1>
-                <button>Contacts</button>
+                <button>Home</button>
             </div>
         `;
     }
