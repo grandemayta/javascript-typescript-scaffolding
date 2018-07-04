@@ -1,7 +1,6 @@
-const httpWrapper = async (url) => {
-    let response = await fetch(url);
-    return await response.json();
+const httpWrapper = async url => {
+  let response = await fetch(url);
+  return response.json();
 };
 
 export default httpWrapper;
-  
