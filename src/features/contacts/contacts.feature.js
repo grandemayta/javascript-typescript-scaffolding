@@ -4,7 +4,7 @@ import { Header } from '../../components';
 
 export default class Contact {
   constructor() {
-    this.title = 'Contacts';
+    this.title = 'Contacts Page';
   }
 
   click() {

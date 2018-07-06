@@ -4,7 +4,7 @@ import { Header } from '../../components';
 
 export default class Home {
   constructor() {
-    this.title = 'VanillaJS';
+    this.title = 'Home page';
   }
 
   click() {
@@ -20,25 +20,8 @@ export default class Home {
     return html`
             <div id="home">
                 <app-header></app-header>
-                <div class="row">
-                    <div class="col-sm">
-                        <input type="email" class="form-control">
-                    </div>
-                    <div class="col-sm">
-                        <div class="form-group">
-                            <label for="currency-secondary" class="bmd-label-floating">
-                                
-                            </label>
-                            <select class="form-control" id="currency-secondary">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
+                <h1>${this.title}</h1>
+                <button>Contacts</button>
             </div>
         `;
   }

@@ -1,5 +1,5 @@
 {
-  "name": "vanilla-js",
+  "name": "scaffolding-vanilla-js",
   "version": "1.0.0",
   "author": {
     "name": "Gabriel Mayta",
@@ -10,6 +10,9 @@
     "start": "webpack-dev-server --config webpack.dev.js",
     "dev": "NODE_ENV=dev webpack --config webpack.dev.js",
     "prod": "NODE_ENV=prod webpack --config webpack.prod.js"
+  },
+  "dependencies": {
+    "lit-html": "^0.10.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -30,10 +33,5 @@
     "webpack-dev-server": "^2.9.5",
     "webpack-merge": "^4.1.1"
   },
-  "license": "MIT",
-  "dependencies": {
-    "lit-html": "^0.10.0",
-    "navigo": "^7.1.2",
-    "siema": "^1.5.1"
-  }
+  "license": "MIT"
 }

@@ -2,13 +2,13 @@ import { html, render } from 'lit-html';
 
 export default class Header {
   constructor() {
-    this.title = 'Header';
+    this.title = 'Header component';
   }
 
   template() {
     return html`
             <header>
-                <h1>${this.title}</h1>
+                <h4>${this.title}</h4>
             </header>
         `;
   }
