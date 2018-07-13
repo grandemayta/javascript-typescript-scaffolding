@@ -12,6 +12,7 @@
     "prod": "NODE_ENV=prod webpack --config webpack.prod.js"
   },
   "dependencies": {
+    "hoek": "^4.2.1",
     "lit-html": "^0.10.0",
     "navigo": "^7.1.2"
   },
