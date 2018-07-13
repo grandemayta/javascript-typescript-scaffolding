@@ -1,4 +1,5 @@
 import { html, render } from 'lit-html';
+import './header.style.scss';
 
 export default class Header {
   constructor() {

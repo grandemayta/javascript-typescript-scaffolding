@@ -12,7 +12,8 @@
     "prod": "NODE_ENV=prod webpack --config webpack.prod.js"
   },
   "dependencies": {
-    "lit-html": "^0.10.0"
+    "lit-html": "^0.10.0",
+    "navigo": "^7.1.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -21,13 +22,18 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "clean-webpack-plugin": "^0.1.17",
+    "css-loader": "^1.0.0",
     "eslint": "^5.0.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-config-xo": "^0.23.0",
     "eslint-plugin-prettier": "^2.6.1",
+    "extract-text-webpack-plugin": "^3.0.2",
     "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.9.2",
     "path": "^0.12.7",
     "prettier": "^1.13.7",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
     "uglifyjs-webpack-plugin": "^1.1.6",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.9.5",
