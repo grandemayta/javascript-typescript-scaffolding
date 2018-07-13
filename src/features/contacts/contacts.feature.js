@@ -1,6 +1,7 @@
 import { html, render } from 'lit-html';
 import Router from '../../core/routes';
 import { Header } from '../../components';
+import './contacts.style.scss';
 
 export default class Contact {
   constructor() {
@@ -8,7 +9,7 @@ export default class Contact {
   }
 
   click() {
-    let home = document.querySelector('#contacts');
+    let home = document.querySelector('app-contacts');
     let btn = home.querySelector('button');
 
     btn.addEventListener('click', () => {
@@ -18,12 +19,12 @@ export default class Contact {
 
   template() {
     return html`
-            <div id="contacts">
-                <app-header></app-header>
-                <h1>${this.title}</h1>
-                <button>Home</button>
-            </div>
-        `;
+      <app-contacts>
+          <app-header></app-header>
+          <h1>${this.title}</h1>
+          <button>Home</button>
+      </app-contacts>
+    `;
   }
 
   load() {

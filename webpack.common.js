@@ -8,10 +8,6 @@ const dist = path.resolve(__dirname, './dist');
 
 module.exports = {
   entry: [`${src}/index.js`],
-  output: {
-    path: dist,
-    filename: process.env.NODE_ENV === 'prod' ? 'bundle.app.min.js' : 'bundle.app.js'
-  },
   module: {
     rules: [
       {
@@ -28,9 +24,6 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin([dist]),
-    new ExtractTextPlugin(
-      process.env.NODE_ENV === 'prod' ? 'bundle.app.min.css' : 'bundle.app.css'
-    ),
     new HtmlWebpackPlugin({
       template: 'index.html',
       filename: 'index.html'

@@ -8,10 +8,10 @@ export default class Header {
 
   template() {
     return html`
-            <header>
-                <h4>${this.title}</h4>
-            </header>
-        `;
+      <header>
+          <h4>${this.title}</h4>
+      </header>
+    `;
   }
 
   load() {

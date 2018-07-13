@@ -1,6 +1,7 @@
 import { html, render } from 'lit-html';
 import Router from '../../core/routes';
 import { Header } from '../../components';
+import './home.style.scss';
 
 export default class Home {
   constructor() {
@@ -8,7 +9,7 @@ export default class Home {
   }
 
   click() {
-    let home = document.querySelector('#home');
+    let home = document.querySelector('app-home');
     let btn = home.querySelector('button');
 
     btn.addEventListener('click', () => {
@@ -18,12 +19,12 @@ export default class Home {
 
   template() {
     return html`
-            <div id="home">
-                <app-header></app-header>
-                <h1>${this.title}</h1>
-                <button>Contacts</button>
-            </div>
-        `;
+      <app-home>
+          <app-header></app-header>
+          <h1>${this.title}</h1>
+          <button>Contacts</button>
+      </app-home>
+    `;
   }
 
   load() {
