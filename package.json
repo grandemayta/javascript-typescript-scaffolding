@@ -29,6 +29,7 @@
     "eslint-config-xo": "^0.23.0",
     "eslint-plugin-prettier": "^2.6.1",
     "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
     "html-webpack-plugin": "^2.30.1",
     "node-sass": "^4.9.2",
     "path": "^0.12.7",

@@ -2,6 +2,7 @@ import { html, render } from 'lit-html';
 import Router from '../../core/routes';
 import { Header } from '../../components';
 import './home.style.scss';
+import jsImage from '../../assets/js-logo.png';
 
 export default class Home {
   constructor() {
@@ -22,6 +23,7 @@ export default class Home {
       <app-home>
           <app-header></app-header>
           <h1>${this.title}</h1>
+          <img src=${jsImage}/>
           <button>Contacts</button>
       </app-home>
     `;
