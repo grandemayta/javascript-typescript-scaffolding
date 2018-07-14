@@ -1,6 +1,6 @@
-import { html, render } from 'lit-html';
 import Router from '../../core/routes';
 import { Header } from '../../components';
+import template from './contacts.template.pug';
 import './contacts.style.scss';
 
 export default class Contact {
@@ -17,18 +17,8 @@ export default class Contact {
     });
   }
 
-  template() {
-    return html`
-      <app-contacts>
-          <app-header></app-header>
-          <h1>${this.title}</h1>
-          <button>Home</button>
-      </app-contacts>
-    `;
-  }
-
   load() {
-    render(this.template(), document.querySelector('#root'));
+    document.querySelector('#root').innerHTML = template();
     new Header().load();
     this.click();
   }

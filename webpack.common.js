@@ -7,7 +7,7 @@ const src = path.resolve(__dirname, './src');
 const dist = path.resolve(__dirname, './dist');
 
 module.exports = {
-  entry: [`${src}/index.js`],
+  entry: [`${src}/app/index.js`],
   module: {
     rules: [
       {
@@ -24,13 +24,18 @@ module.exports = {
         test: /\.(jpg|png|gif|eot|woff|woff2|ttf|svg)$/,
         loader: 'file-loader',
         exclude: /node_modules/
+      },
+      {
+        test: /\.pug$/,
+        loader: 'pug-loader',
+        exclude: /node_modules/
       }
     ]
   },
   plugins: [
     new CleanWebpackPlugin([dist]),
     new HtmlWebpackPlugin({
-      template: 'index.html',
+      template: `${src}/app/index.pug`,
       filename: 'index.html'
     })
   ],

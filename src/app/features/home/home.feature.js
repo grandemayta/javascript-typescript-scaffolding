@@ -1,8 +1,8 @@
-import { html, render } from 'lit-html';
 import Router from '../../core/routes';
 import { Header } from '../../components';
+import template from './home.template.pug';
 import './home.style.scss';
-import jsImage from '../../assets/js-logo.png';
+import jsImage from '../../../assets/js-logo.png';
 
 export default class Home {
   constructor() {
@@ -18,19 +18,8 @@ export default class Home {
     });
   }
 
-  template() {
-    return html`
-      <app-home>
-          <app-header></app-header>
-          <h1>${this.title}</h1>
-          <img src=${jsImage}/>
-          <button>Contacts</button>
-      </app-home>
-    `;
-  }
-
   load() {
-    render(this.template(), document.querySelector('#root'));
+    document.querySelector('#root').innerHTML = template({ title: this.title, jsImage });
     new Header().load();
     this.click();
   }
