@@ -7,7 +7,7 @@ const src = path.resolve(__dirname, './src');
 const dist = path.resolve(__dirname, './dist');
 
 module.exports = {
-  entry: [`${src}/index.js`],
+  entry: [`${src}/app/index.js`],
   module: {
     rules: [
       {
@@ -30,7 +30,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin([dist]),
     new HtmlWebpackPlugin({
-      template: 'index.html',
+      template: `${src}/app/index.html`,
       filename: 'index.html'
     })
   ],
