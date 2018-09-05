@@ -1,9 +1,9 @@
-import template from './header.template.pug';
-import './header.style.scss';
+import template from './header.pug';
+import './header.scss';
 
 export default class Header {
-  constructor() {
-    this.title = 'Header component';
+  constructor(title) {
+    this.title = title;
   }
 
   load() {

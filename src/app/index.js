@@ -4,7 +4,7 @@ import '../styles/common.scss';
 
 const routes = {
   '/': () => {
-    new Home().load();
+    new Home('#root').load();
   },
   '/contacts': () => {
     new Contacts().load();
