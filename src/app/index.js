@@ -7,7 +7,7 @@ const routes = {
     new Home('#root').load();
   },
   '/contacts': () => {
-    new Contacts().load();
+    new Contacts('#root').load();
   }
 };
 

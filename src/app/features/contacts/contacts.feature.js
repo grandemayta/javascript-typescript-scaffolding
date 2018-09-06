@@ -1,25 +1,15 @@
-import Router from '../../core/routes';
-import { Header } from '../../components';
+import { Header, Button } from '../../components';
 import template from './contacts.template.pug';
 import './contacts.style.scss';
 
 export default class Contact {
-  constructor() {
-    this.title = 'Contacts Page';
-  }
-
-  click() {
-    let home = document.querySelector('app-contacts');
-    let btn = home.querySelector('button');
-
-    btn.addEventListener('click', () => {
-      new Router().go('/');
-    });
+  constructor(selector) {
+    this.contactsEl = document.querySelector(selector);
   }
 
   load() {
-    document.querySelector('#root').innerHTML = template();
-    new Header().load();
-    this.click();
+    this.contactsEl.innerHTML = template();
+    new Header('Contacs Page').load();
+    new Button('#button1').load();
   }
 }
