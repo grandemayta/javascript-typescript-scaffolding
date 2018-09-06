@@ -12,6 +12,7 @@
     "prod": "webpack --config webpack.prod.js"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.0.0",
     "navigo": "^7.1.2"
   },
   "devDependencies": {

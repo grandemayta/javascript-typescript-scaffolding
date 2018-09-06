@@ -8,7 +8,7 @@ const dist = path.resolve(__dirname, './dist');
 
 module.exports = {
   entry: {
-    vendor: ['navigo'],
+    vendor: ['@babel/polyfill', 'navigo'],
     app: `${src}/app/core/app.js`
   },
   optimization: {
