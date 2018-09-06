@@ -1,4 +1,4 @@
-import Home from './home/home.feature';
-import Contacts from './contacts/contacts.feature';
+import Home from './home/home';
+import Contacts from './contacts/contacts';
 
 export { Home, Contacts };
