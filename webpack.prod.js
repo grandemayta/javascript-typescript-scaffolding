@@ -1,5 +1,5 @@
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const merge = require('webpack-merge');
 const common = require('./webpack.common');
 const path = require('path');
@@ -7,9 +7,15 @@ const path = require('path');
 const dist = path.resolve(__dirname, './dist');
 
 module.exports = merge(common, {
+  mode: 'production',
   output: {
     path: dist,
-    filename: 'bundle.app.min.js'
+    filename: '[name].min.js'
   },
-  plugins: [new ExtractTextPlugin('bundle.app.min.css'), new UglifyJSPlugin()]
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'style.min.css'
+    }),
+    new OptimizeCssAssetsPlugin()
+  ]
 });
