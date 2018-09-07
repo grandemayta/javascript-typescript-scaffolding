@@ -40,4 +40,4 @@ $ npm run prod
 
 Keep calm and code!
 <br>
-[![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=102)]()
+<img src="https://badges.frapsoft.com/os/v3/open-source.svg?v=102"/>
