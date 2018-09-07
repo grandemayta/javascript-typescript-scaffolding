@@ -6,14 +6,14 @@ You can use latest features of es6 and es7 without add manually the polyfills.
 ## Launch the application
 
 ```sh
-npm install
-npm start
+$ npm install
+$ npm start
 ```
 
 ## Release in Production
 
 ```sh
-npm run prod
+$ npm run prod
 ```
 
 ## Tech Stack
