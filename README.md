@@ -13,6 +13,12 @@ npm install
 npm start
 ```
 
+## Release in Production
+
+```sh
+npm run prod
+```
+
 ## Tech Stack
 
 ### Libraries
