@@ -38,4 +38,6 @@ $ npm run prod
 - [ ] Setup Unit Testing
 - [ ] Setup E2E Testing
 
-<p>Keep calm and code! [![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=102)]()</p>
+Keep calm and code!
+<br>
+[![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=102)]()
