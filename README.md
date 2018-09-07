@@ -7,9 +7,6 @@ You can use latest features of es6 and es7 without add manually the polyfills.
 
 ```sh
 npm install
-```
-
-```sh
 npm start
 ```
 
