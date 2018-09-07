@@ -31,6 +31,6 @@ npm start
 ## Todo
 
 - [ ] Setup Unit Testing
-- [ ] Setup Testing End to End
+- [ ] Setup E2E Testing
 
 Keep calm and code!
