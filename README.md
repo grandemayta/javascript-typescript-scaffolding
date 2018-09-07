@@ -30,7 +30,7 @@ npm start
 
 ## Todo
 
-- [] Setup Unit Testing
-- [] Setup Testing End to End
+- [ ] Setup Unit Testing
+- [ ] Setup Testing End to End
 
 Keep calm and code!
