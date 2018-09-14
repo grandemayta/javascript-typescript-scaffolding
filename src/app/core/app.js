@@ -1,4 +1,3 @@
-import '@babel/polyfill';
 import Router from './routes';
 import { Home, Contacts } from '../features';
 import '../../styles/common.scss';
