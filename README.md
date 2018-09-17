@@ -18,7 +18,7 @@ $ npm start
 $ npm run prod
 ```
 
-## Browser support
+## Browsers support
 
 - [x] Chrome
 - [x] Firefox
