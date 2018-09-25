@@ -1,24 +1,26 @@
 import { html, render } from 'lit-html';
-import Router from '../../core/routes';
-import { Header } from '../../components';
-import './home.style.scss';
 import jsImage from '../../../assets/js-logo.png';
+import { Header } from '../../components';
+import Router from '../../core/routes';
+import './home.style.scss';
 
 export default class Home {
+  private title: string;
+
   constructor() {
     this.title = 'Home page';
   }
 
-  click() {
-    let home = document.querySelector('app-home');
-    let btn = home.querySelector('button');
+  public click() {
+    const home = document.querySelector('app-home');
+    const btn = home.querySelector('button');
 
     btn.addEventListener('click', () => {
       new Router().go('/contacts');
     });
   }
 
-  template() {
+  public template() {
     return html`
       <app-home>
           <app-header></app-header>
@@ -29,7 +31,7 @@ export default class Home {
     `;
   }
 
-  load() {
+  public load() {
     render(this.template(), document.querySelector('#root'));
     new Header().load();
     this.click();

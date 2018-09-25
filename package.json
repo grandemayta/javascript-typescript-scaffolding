@@ -6,7 +6,7 @@
     "email": "grandemayta@gmail.com"
   },
   "scripts": {
-    "pretest": "eslint . --fix",
+    "pretest": "tslint --fix 'src/**/*{.ts,.tsx}'",
     "start": "webpack-dev-server --config webpack.dev.js",
     "dev": "NODE_ENV=dev webpack --config webpack.dev.js",
     "prod": "NODE_ENV=prod webpack --config webpack.prod.js"
@@ -21,8 +21,6 @@
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-typescript": "^7.1.0",
-    "@types/jest": "^23.3.2",
-    "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.2",
     "clean-webpack-plugin": "^0.1.17",
     "css-loader": "^1.0.0",
@@ -45,6 +43,9 @@
     "webpack-dev-server": "^3.1.8",
     "webpack-merge": "^4.1.1",
     "whatwg-fetch": "^2.0.4"
+  },
+  "resolutions": {
+    "babel-core": "7.0.0-bridge.0"
   },
   "license": "MIT"
 }

@@ -1,6 +1,6 @@
-import Router from './core/routes';
-import { Home, Contacts } from './features';
 import '../styles/common.scss';
+import Router from './core/routes';
+import { Contacts, Home } from './features';
 
 const routes = {
   '/': () => {

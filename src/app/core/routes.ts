@@ -1,6 +1,11 @@
 import Navigo from 'navigo';
 
 export default class Router {
+  private root: string;
+  private useHash: boolean;
+  private hash: string;
+  private router: Navigo;
+
   constructor() {
     this.root = null;
     this.useHash = true;
@@ -8,11 +13,11 @@ export default class Router {
     this.router = new Navigo(this.root, this.useHash, this.hash);
   }
 
-  go(url) {
+  public go(url) {
     this.router.navigate(url);
   }
 
-  bootstrap(routes) {
+  public bootstrap(routes) {
     this.router.on(routes).resolve();
   }
 }

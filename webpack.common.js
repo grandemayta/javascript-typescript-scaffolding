@@ -9,7 +9,7 @@ const dist = path.resolve(__dirname, './dist');
 module.exports = {
   entry: {
     vendor: ['navigo'],
-    app: `${src}/app/index.js`
+    app: `${src}/app/index.ts`
   },
   optimization: {
     splitChunks: {
@@ -26,7 +26,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.ts$/,
         loader: 'babel-loader',
         exclude: /node_modules/
       },
@@ -43,14 +43,18 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin([dist]),
+    new CleanWebpackPlugin([dist], {
+      root: process.cwd(),
+      verbose: true,
+      dry: false
+    }),
     new HtmlWebpackPlugin({
       template: `${src}/app/index.html`,
       filename: 'index.html'
     })
   ],
   resolve: {
-    extensions: ['.js', '.scss'],
+    extensions: ['.ts', '.js', '.scss'],
     modules: ['node_modules', 'src']
   }
 };

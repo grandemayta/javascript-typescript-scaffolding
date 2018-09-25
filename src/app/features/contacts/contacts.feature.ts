@@ -1,23 +1,25 @@
 import { html, render } from 'lit-html';
-import Router from '../../core/routes';
 import { Header } from '../../components';
+import Router from '../../core/routes';
 import './contacts.style.scss';
 
 export default class Contact {
+  private title: string;
+
   constructor() {
     this.title = 'Contacts Page';
   }
 
-  click() {
-    let home = document.querySelector('app-contacts');
-    let btn = home.querySelector('button');
+  public click() {
+    const home = document.querySelector('app-contacts');
+    const btn = home.querySelector('button');
 
     btn.addEventListener('click', () => {
       new Router().go('/');
     });
   }
 
-  template() {
+  public template() {
     return html`
       <app-contacts>
           <app-header></app-header>
@@ -27,7 +29,7 @@ export default class Contact {
     `;
   }
 
-  load() {
+  public load() {
     render(this.template(), document.querySelector('#root'));
     new Header().load();
     this.click();
