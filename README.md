@@ -31,6 +31,7 @@ $ npm run prod
 ### Libraries
 
 - [Polyfill](https://babeljs.io/docs/en/babel-polyfill.html)
+- [Lit-html](https://github.com/Polymer/lit-html)
 - [Navigo](https://github.com/krasimir/navigo)
 
 ### Tools
