@@ -3,7 +3,7 @@
 [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 [![made-with-javascript-doc](https://img.shields.io/badge/Made%20with-Javascript-1f425f.svg)](https://www.sphinx-doc.org/)
 
-SPA Scaffolding build with Vanilla JS, Typescript and Lit-html as a template engine. To navigate between pages I added navigo router. You can use latest features of es6 and es7 without add manually the polyfills.
+SPA Scaffolding built with Vanilla JS, Typescript and Lit-html as a template engine. To navigate between pages I added navigo router. You can use latest features of es6 and es7 without add manually the polyfills.
 
 ## Launch the application
 
