@@ -4,10 +4,10 @@ import { Contacts, Home } from './features';
 
 const routes = {
   '/': () => {
-    new Home().load();
+    new Home('#root').load();
   },
   '/contacts': () => {
-    new Contacts().load();
+    new Contacts('#root').load();
   }
 };
 

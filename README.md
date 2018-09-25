@@ -44,6 +44,7 @@ $ npm run prod
 
 ## Todo
 
+- [ ] Handle path with alias
 - [ ] Setup Unit Testing
 - [ ] Setup E2E Testing
 

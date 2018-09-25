@@ -1,11 +1,13 @@
 import { html, render } from 'lit-html';
-import './header.style.scss';
+import './header.scss';
 
 export default class Header {
+  private headerEl: HTMLElement;
   private title: string;
 
-  constructor() {
-    this.title = 'Header component';
+  constructor(selector) {
+    this.headerEl = document.querySelector(selector);
+    this.title = this.headerEl.getAttribute('data-title');
   }
 
   public template() {
@@ -17,6 +19,6 @@ export default class Header {
   }
 
   public load() {
-    render(this.template(), document.querySelector('app-header'));
+    render(this.template(), this.headerEl);
   }
 }
